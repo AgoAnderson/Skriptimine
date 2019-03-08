@@ -2,6 +2,6 @@
 #
 # var .logid
 #
-find /var/ -name "*.log" -type f 2>/dev/null -exec wc -l {} \; | sort -nr
+find /var/ -name "*.log" -type f 2>/dev/null -exec wc -l {} \; | sort -nr # leiab /var kaustas kõik failid mis lõppevad .log-iga, viib veateated /dev/null, kontrollib mitu rida igas failis on ja sorteerib kahanevas järjekorras
 #
 # skripti lõpp
