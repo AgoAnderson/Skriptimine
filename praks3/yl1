@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# kuupäev
+#
+echo -n "Today's date is: "
+date +"%A, %B %-d, %Y"
+echo -n "Time is: "
+date +"%T"
+echo " "
+echo -n "Calendar of"
+cal
+#
+# skripti lõpp
