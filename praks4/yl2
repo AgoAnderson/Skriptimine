@@ -1,0 +1,24 @@
+#
+# Küpsise tort
+#
+echo -n "aluskandiku pikkus cm ja laius cm: " # Pead kirjutama alus kandiku pikkuse ja laiuse ehk pikkus laius
+read pikkus laius # loeb pikkus ta laiust
+echo "aluskandiku pikkus $pikkus cm ja laius $laius cm" # väljastab loetud pikkuse ja laiuse
+x=`expr $pikkus \* $laius` # korrutab pikkuse ja laiuse
+echo "küpsise pindala on $x ruut_cm" #$x väljastab korrutatud pikkuse ja laiuse
+echo -n "kypsise pikkus cm ja laius cm: " #pead kirjutama kypsise pikkuse ja laiuse ehk pikkus laius
+read pikkus laius #loeb pikkust ja laiust
+echo "kypsise pikkus $pikkus cm ja laius $laius cm" # väljastab küpsise pikkuse ja laiuse
+x=`expr $pikkus \* $laius` # korrutab küpsise pikkuse ja laiuse
+echo "küpsise pindala on $x ruut_cm" #$x väljastab korrutatud pikkuse ja laiuse ehk pindala
+echo -n "mitu tordi kihti: " #sisestad mitu tordi kihit on ehk kiht
+read mitu # loeb mitu tordi kihti on
+echo "$mitu tordi kihti" #väljastab mitu tordi kihti on
+echo -n "mitu kypsist yhes pakis: " # sisestad mitu küpsist ühes pakis on ehk mituküpsist
+read kypsist # loeb mitu küpsise kihti on
+echo "yhes pakis $kypsist kyppsist"  # sisestad mitu küpsist ühes pakis on ehk mitutükki
+x=`expr $mitu \* $kypsist` # korrutab  kihtide arvu ja küpsiste arvu ühes pakis
+echo "tuleb osta $x pakki kypsist" #¤x väljastab sulle mitu pakki tuleb küpsiseid osta
+# 
+# skripti lõpp
+#
