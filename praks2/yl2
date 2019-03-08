@@ -2,8 +2,8 @@
 #
 # minu muljed
 #
-echo  "Ago Anderson"
-echo  "ISP118"
-echo  "Aine tundub huvitav"
+echo  "Ago Anderson" # välastab reavhetusega Ago Anderson
+echo  "ISP118" # väljastab reavahetusega ISP118
+echo  "Aine tundub huvitav" # väljastab reavahetusega Aine tundub huvitav
 #
 # skripti lõpp
