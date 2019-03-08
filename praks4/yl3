@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# Bussi sõit
+#
+echo -n "Mitu reisijat on grupis: " # pead kirjutama mitu reisijat on grupis
+read reisijat # loeb mitu reisijat on grupis
+echo "Reisijaid on $reisijat " # väljastab mitu reisijat on grupis
+echo -n "Mitu kohta bussis on: " # pead kirjutama mitu bussi kohta on 
+read kohta # loeb mitu bussi kohta on
+echo "Bussis on $kohta kohta" # väljastab mitu kohta bussis on
+echo -n "Mitu bussi on: " # pead kirjutama mitu bussi on
+read bussi #loeb mitu bussi on
+echo "busse on $bussi" # väljastab mitu bussi on
+vaba=`expr $bussi \* $kohta` # arvutab mitu vaba kohta on bussis
+echo "Bussis on $vaba vaba kohta" # väljastab mitu vaba kohta on bussis
+yle=`expr $reisijat - $vaba` # arvutab mitu reisijat maha jääb
+echo "Maha jäi $yle reisijat" # väljastab mitu reisijat jäi maha
+#
+# skripti lõpp
+#
