@@ -2,12 +2,12 @@
 #
 # kuupäev
 #
-echo -n "Today's date is: "
-date +"%A, %B %-d, %Y"
-echo -n "Time is: "
-date +"%T"
-echo " "
-echo -n "Calendar of"
-cal
+echo -n "Today's date is: " # väljastab reavahetuseta Todays date is: 
+date +"%A, %B %-d, %Y" # väljastab tänase kuupäeva
+echo -n "Time is: " # väljastab ilma reavahetuseta Time is: 
+date +"%T" # väljastab praeguse kellaaja
+echo " " # väljastab reavahetusega tühiku
+echo -n "Calendar of" # väljastab reavahetuseta Calender of
+cal # väljastab kalendri
 #
 # skripti lõpp
