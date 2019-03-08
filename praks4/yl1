@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Minu ees ja perenimi 
+#
+echo -n "Sisesta oma ees- ja perenimi: " # sisetsab Ago Anderson ilma reavahetuseta
+read eesnimi perenimi # Loeb eesnimi ja perenimi
+echo "Tere tulemast, $eesnimi $perenimi" # Väljastab loetud eesnime ja perenime
+#
+# Skripti lõpp
+#
