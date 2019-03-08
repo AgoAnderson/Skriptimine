@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# masina töö
+#
+echo -n "skriptimine at " # Väljastab reavahetuseta skriptimine at
+uptime -s # näitab kui kaua masin on töödanud
+#
+#
