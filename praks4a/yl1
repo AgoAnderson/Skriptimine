@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+#vanus ja nimi
+echo -n "Sisesta oma nimi: " #pead sisestama oma nime
+read a # loeb sisestatud väärtust
+echo "Tere tulemast, $a " # väljastab sisestatud väärtuse
+echo -n "sisesta oma sünniaasta: " # pead sisestama oma sünniaasta
+read b # loeb sisestatud väärtust
+d=`date +"%Y"` #d= praegune aasta
+c=`expr $d - $b` #c= praegune aasta - sinu vanus
+echo " $a , sina oled $c aastat vana" #väljastab su nime ja kui vana sa oled
+#
+#skripti lõpp
