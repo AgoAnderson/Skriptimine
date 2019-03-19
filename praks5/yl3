@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# imeline puhkus
+#
+echo "pyhapaev-0 esmaspaev-1 teisipaev-2 kolmapaev-3 neljapaev-4 reede-5 laupaev-6" # väljastab vasakul oleva teksti mis on jutumärkide vahel
+echo "sisesta mis paeval soidad ara: " #pead sisestama mis päeval sõidad ära
+read x # leob mis päeval sa ära sõidad
+echo "sisesta reisi oopaevade arv: " #pead sisestama mitu päeva reis kestab
+read y # loeb mitu päeva reis kestab
+z=`echo "$x + $y" | bc` # liidab ärasõidu päeva ja mitu päeva reis kestab
+q=`echo "$z % 7" | bc` # jagab jäägiga liitetud reisi päevade arvu ja ärasõidupäeva
+echo "tagasi tuled paeval number $q " # väljastab mis päeval tagasi jõuad
+#
+# skripti lõpp
+#
