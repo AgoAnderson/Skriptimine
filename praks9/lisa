@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# lisa
+echo -n "sisesta ridade arv: "
+read rida
+reanr=1
+for (( i = 1; i <= $rida; i++ ))
+do
+echo -n "$reanr."
+tarn=$(($rida - $i))
+let reanr++
+for (( j = 1 ; j <= $tarn ; j++ ))
+do
+echo -n "o "
+done
+for (( u = 1; u <= $i; u++ ))
+do
+echo -n "* "
+done
+echo ""
+done
+#
+# skripti lõpp
