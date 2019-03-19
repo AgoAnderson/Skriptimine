@@ -2,7 +2,7 @@
 #
 # täisnurkne kolmnurk
 #
-echo -n "A ja B külje väärtus: " # pead panema A külja ja B külje väärtused (reavahetused)
+echo -n "A ja B külje väärtus: " # pead panema A külja ja B külje väärtused (reavahetuseta)
 read x y # loeb A ja B külje väärtusi
 echo "A külje väärtus on $x ja B külje väärtus on $y " # väljastab A ja B külje väärtused 
 echo -n "hüpotenuusi väärtus on: " # väljastab hüpotenuusi väärtuse (reavahetuseta ,et alumine käsk saaks tulla tema ette)
