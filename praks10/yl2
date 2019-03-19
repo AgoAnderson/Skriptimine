@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# aastaaeg
+echo -n "Sisesta kuu number: " # küsib kuu numbrit
+read a # loeb sisestatut
+if (( $a == 12 || $a == 1 || $a == 2 )); # kui a on 12, 1 või 2
+then echo "praegu on talv" # siis väljastatakse praegu on talv
+elif (( $a > 2 && $a < 5 || $a == 5 )); # kui a jääb 2 ja 5 vahele või a on 5 
+then echo "praegu on kevad" # siis väljastatakse praegu on kevad
+elif (( $a > 5 && $a < 8 || $a == 8 )); # kui a jääb 5 ja 9 vahele või on 8 
+then echo "praegu on suvi" # siis väljastatakse praegu on suvi
+elif (( $a > 8 && $a < 11 || $a == 11 )); # kui a jääb 8 ja 11 vahele või on 11
+then echo "praegu on sügis" # siis väljastatakse praegu on sügis
+else echo "vigane sisend" # kui a ei sobi üleval toodud tingimustega siis väljastatakse vigane sisend
+fi # if commandi lõpp
+# skripti lõpp
