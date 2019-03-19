@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# busside arv
+#
+echo "sisesta reisijate arv: " # pead sisestama reisijate arvu
+read x # loeb reisijate arvu
+echo "sisesta kohtade arv bussis: " # pead sisetama kohtade arvu bussis
+read y # loeb kohtade arvu bussis
+z=$(($x / $y)) # jagab reisijate arvu bussi kohtade arvuga
+q=$(($x % $y)) # jagab reisijate arvu bussi kohtade arvuga, arvutab ka jäägi
+if test $q -gt 0 # vaatab kas väärtus q arv on null
+then # kui q väärtus ei ole null
+z=$(($z + 1)) # siis lisatakse busside arvule 1
+fi # if commandi lõpp
+echo "kokku on vaja $z bussi" # väljastab mitu bussi on vaja
+#
+# skripti lõpp
+#
