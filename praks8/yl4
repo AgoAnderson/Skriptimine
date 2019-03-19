@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# algarv või mitte
+echo "Sisetage suvaline arv: \c " # tuleb sisetada suvaline arv
+read arv loeb sisestatut
+if (( $arv==0 )) || (( $arv==1 )); #kui arv võrdub nulli või ühega
+then echo "$arv - ei ole algarv" # siis väljastatakse - ei ole algarv
+else # kui arv ei vasta üleval olevatele nõuetele, siis 
+jagaja=2 # jagaja võrdub 2
+jaak=$(( $arv%$jagaja )) # jääk võrdub arvu ja jagaja jääk 
+while (( $jaak != 0 )) # kui jääk ei võrdu 0
+do # siis tee
+jagaja=$(( $jagaja+1 )) #jagaja pluss 1
+jaak=$(( $arv%$jagaja )) # arvu ja jagaja jääk
+done # while commandi lõpp
+if (( $arv==$jagaja )); # kui arv võrdub jagajaga
+then echo "$arv - on algarv" # siis väljasta - on algarv
+else echo "$arv - ei ole algarv" # kui ei võrdu siis väljasta - ei ole algarv
+fi # if commandi lõpp
+fi # if commandi lõpp
+# skripti lõpp
