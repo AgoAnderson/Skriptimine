@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+#paar või mitte
+#
+if (( $1 % 2 == 0 )) # vaatab kas esimene parameeter jagub kahega
+then # kui jagub siis
+echo "Antud arv on paaris" # väljastab et arv on paarisarv
+else # kui ei jagu siis
+echo "Antud arv on paaritu" # väljastab et arv on paaritu
+fi # if commandi lõpp
+#
+# skripti lõpp
+#
