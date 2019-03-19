@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# alaealine, täiskasvanu või seenjor
+# laps, nooruk, täiskasvanu või seenjor
 #
 echo -n "sisestage oma vanus: " # tuleb sisestada oma vanus
 read x # loeb sisestatud arvu
