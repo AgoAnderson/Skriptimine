@@ -1,0 +1,11 @@
+#!/bin/bash
+# kujund 1
+for (( i = 1; i <= 5; i++ )) # i jaoks on 5 sümbolit järjest
+do # tee 
+for (( j = 1 ; j <= 5 ; j++ )) # j jaoks 5 rida alla
+do # tee
+echo -n "* " # väljastab reavahetuseta 5 * järjest
+done # for commadi lõpp
+echo "" # läheb 5 rida alla
+done # for commandi lõpp
+# skripti lõpp
