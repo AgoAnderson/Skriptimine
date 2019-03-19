@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# vanus
+echo -n "sisestage oma vanus: " # küsib vanust
+read a # loeb sisestatut
+if (( $a > 0 && $a < 11 || $a == 11 )); # kui a jääb 0 ja 11 vahele või a on 11 
+then echo "oled laps" # siis väljastatakse sa oled laps
+elif (( $a > 11 && $a < 18 || $a == 18 )); # kui a jääb 11 ja 18 vahele või on 18 
+then echo "oled nooruk" # siis väljastatakse sa oled nooruk
+elif (( $a > 18 && $a < 63 || $a == 63 )); # kui a jääb 18 ja 63 vahele või a on 63
+then echo "oled täiskasvanu" # siis väljastatakse sa oled täiskasvanud
+elif (( $a > 63 )); # kui a on suurem kui 63
+then echo "oled seenjor" # siis väljastatakse sa oled seenjor
+else echo "vigane sisend" # kui a ei vasta üleval toodud tingimustele siis väljastatakse vigane sisend
+fi # if commandi lõpp
+#
+# skripti lõpp
