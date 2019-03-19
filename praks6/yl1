@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# paaris või mitte
+#
+echo "sisesta suvaline täisarv: " # sisesta suvaline arv
+read x #loeb sisestatud arvu
+if (($x % 2 == 0 )) 
+then # kui x jagub kahega siis on paarisarv
+echo "see on paarisarv"
+else # kui x ei jagu kahega siis on paarituarv
+echo "see on paarituarv"
+fi # if commandi lõpp
+#
+# skripti lõpp
+#
