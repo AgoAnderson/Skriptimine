@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# kellaaeg
+echo -n " Sisestage aja väärtus: " # küsib aja väärtust
+read a # loeb sisestatut
+if (( $a == 6 || $a > 6 && $a < 12 )); # kui a on 6 või jääeb 6 ja 12 vahele
+then echo "Tere hoomikust!" # siis väljastatakse tere hommikust
+elif (( $a == 12 || $a > 12 && $a < 18 )); # kui a on 12 või jääb 12 ja 18 vahele
+then echo "Tere päevast!" # siis väljastatakse tere päevast
+elif (( $a == 18 || $a > 18 && $a < 22 )); # kui a on 18 või jääb 18 ja 22 vahele
+then echo "Tere õhtust!" # siis väljastatakse tere õhtust
+elif (( $a == 22 || $a > 22 && $a < 24 || $a == 24 || $a == 0 || $a > 0 && $a < 6 )); # kui a on 22 või 24 või jääb 22 ja 24 vahele jvõi a on 0 või jääeb 0 ja 6 vahele
+then echo "Head ööd!" # siis väljastatakse head ööd
+else echo "vigane sisend" # kui a ei vasta üleval olevatele tingimustel siis väljastatakse vigane sisend
+fi # if commandi lõpp
+# skripti lõpp
