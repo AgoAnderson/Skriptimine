@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+#
+echo -n "sisesta kataloogi nimi: " #peab sisestama kataloogi nime
+read kataloog #loeb sisestatud
+echo -n "sisesta kuhu soovite backupi panna: " # peab sisestama kuhu soovite backupi panna
+read backup #loeb sisestatud
+echo -n "sisesta nimi mis tahad kokku pakitud failile panna: " #peab sisestama mis backupi nimeks panna
+read nimi # leob sisetatud
+tar -czf $nimi.tar.zip $kataloog #tarib ja zipib paneb nime ja võtab kataloogi asukoha
+mv $nimi.tar.zip $backup # paneb selle sisestatud backupi kausta
+echo "Kataloogi $kataloog backupi nimi on $nimi.tar.zip ja ta asub $backup kataloogis. " #väljastab kataloogi mida tuli tarida ja zipida, väljastab backupi nime ja kus kohas see asub
+#
+#skripti lõpp
