@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# yl3
+echo -n "Sisesta ridade arv: "
+read a
+echo -n "Sisesta tärnide arv reas: "
+read b
+for (( i = 1; i <= $a; i++ ))
+do
+echo -n "$reanumber"
+for (( j = 1 ; j <= $b ; j++ ))
+do
+if (( $i == 1 || $i == $a ));
+then echo -n "* "
+elif (( $j == 1 || $j == $b ));
+then echo -n "* "
+else echo -n "  "
+fi
+done
+echo ""
+done
+# skripti lõpp
