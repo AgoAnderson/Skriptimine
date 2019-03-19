@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# ringi C ja S
+echo -n "Sisesta ringi raadius (sentimeetrites): " #pead sisestama ringi raadiuse
+read a #loeb sisestatud väärtust
+b=`echo "2 * 3.14 * $a" | bc` #arvutab ringi ümbermõõdu
+c=`echo "3.14 * ( $a * $a )" | bc` #arvutab ringi pindala
+echo "Sinu ringi pindala on $c ruutsentimeetrit ja ümbermõõt on $b cm" #väljastab ringi pindala ja ümbermöödu
+#
+# skripti lõpp
