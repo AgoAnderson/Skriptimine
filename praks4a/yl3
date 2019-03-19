@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+#
+tar -zcf test.backup.tar.zip ./test
+mv ./test.backup.tar.zip /home/user/skriptimine/praks4a/backup
