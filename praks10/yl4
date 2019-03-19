@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# kellaeg ja nimi
+echo -n "Sisestage aja väärtus: " # küsib aja väärtust
+read a # loeb sisestatut
+nimi=$( whoami ) # nimi = whoami käsk
+if (( $a == 6 || $a > 6 && $a < 12 )); # kui a on kuus või jääeb 6 ja 12 vahele
+then echo "Tere hommikust, $nimi " # siis väljastatakse tere hommikust, $nimi
+elif (( $a == 12 || $a > 12 && $a < 18 )); # kui a on 12 või jääeb 12 ja 18 vahele
+then echo "Tere päevast, $nimi " # siis väljastatakse tere päevast, nimi
+elif (( $a == 18 || $a > 18 && $a < 22 )); # kui a on 18 või jääb 18 ja 22 vahele
+then echo "Tere õhtust, $nimi " # siis väljastatakse tere õhtust, $nimi
+elif (( $a == 22 || $a == 24 || $a > 22 && $a < 24 || $a == 0 || $a > 0 && $a < 6 )); # kui a on 22 või 14 või jääb 22 ja 24 vahele ja  kui a on 0 või jääb 0 ja 6 vahele 
+then echo "Head ööd, $nimi " # siis väljastatakse Head ööd, $nimi
+else echo "vigane sisend" # kui sisestatud väärtus ei sobi üleval olevate tingimustega, siis väljastatakse vale sisend
+fi # if commandi lõpp
+# skripti lõpp
