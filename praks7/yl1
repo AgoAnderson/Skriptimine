@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# alaealine, täiskasvanu või seenjor
+#
+echo -n "sisestage oma vanus: " # tuleb sisestada oma vanus
+read x # loeb sisestatud arvu
+if (( $x > 63 )); # kui arv on suurem kui 63
+then echo "te olete seenjor" # siis väljastatakse te olete seenjor
+elif(( $x < 18 )); # ja kui arv on väiksem kui 18
+then echo "te olete alaealine" # siis väljastatakse te olete alaealine
+else echo "te olete täiskasvanu" # kui arv jääb 18 ja 63 vahele, siis väljastatakse te olete täiskasvanu
+fi # if commandi lõpp 
+#
+# skripti lõpp
+#
