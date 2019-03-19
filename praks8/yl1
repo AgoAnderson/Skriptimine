@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+#
+summa=0 # summa on 0 
+for (( a=1; a<11; a++ )) # 
+do 
+jaak=$(( $a%2 )) # arvutab a jäägi
+if (( $jaak==0 )); # kui jääk on 0 
+then 
+summa=$(( $summa+$a )) # siis summale liidetakse a
+echo $summa # väljastab summa
+fi # if commandi lõpp
+done # for commandi lõpp
+echo " Arvude vahemikus 1 kuni 10 (kaasaarvatud) paarisarvude summa on: $summa"
