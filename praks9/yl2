@@ -1,0 +1,14 @@
+#!/bin/bash
+# kujund 2
+echo -n "Sisesta ridade arv: "
+read a
+echo -n "Sisesta tärnide arv reas: "
+read b
+for (( i = 1; i <= $a; i++ ))
+do
+for (( j = 1 ; j <= $b ; j++ ))
+do
+echo -n "* "
+done
+echo ""
+done
