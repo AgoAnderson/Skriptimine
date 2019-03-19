@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# kellaaeg
+#
+echo -n "sisesta aja väärtus (tundides): " #tulen sisestada tundide arvu
+read x #loeb tundide arvu
+if (( $x ==  6 )) || (( $x > 6 )) && (( $x < 12 )); #kui x võrdub 6 või x on suurem kui 6 ja väiksem kui 12
+then echo "Tere hommikust!" # siis väljastatakse tere hommikust!
+elif (( $x == 12 )) || (( $x > 12 )) && (( $x < 18 )); #kui x on 12 või suurem kui 12 ja väiksem kui 18
+then echo "Tere päevast!" #siis väljastatakse tere päevast!
+elif (( $x == 18 )) || (( $x > 18 )) && (( $x < 22 )); #kui x võrdub 18 või x on suurem kui 18 ja väiksem kui 22 
+then echo "Tere õhtust!" # siis väljastatakse tere õhtust!
+elif (( $x == 22 )) || (( $x > 22 )) && (( $x < 25)); #kui x on 22 või x on suurem kui 22 ja väiksem kui 25 
+then echo "head ööd!" #siis sisestatakse head ööd!
+elif (( $x == 0 )) || (( $x > 0 )) && (( $x < 6 )); #kui x on 0 või suurem kui 0 ja väiksem kui 6 
+then echo "Head ööd!" # siis väljastatakse head ööd!
+else echo "Vale sisend" # kui arv ei ol 0-25ni siis väljastatakse vale sisend
+fi # if commandi lõpp
+#
+# skripti lõpp
