@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+#kolmnurga pindala
+#
+echo "sisesta kolmnurga a kylje väärtus: " #pead sisestama a külje väärtuse (reaalarvud sobivad samuti)
+read x # loeb a külje väärtust
+echo "a kylje väärtus on $x " # väljastab a külje väärtuse
+echo "sisesta kolmnurga b kylje väärtus: " # pead sisestama b külje väärtuse (reaalarvud sobivad samuti)
+read y # loeb b külje väärtust
+echo "b külje väärtus on $y " # väljastab b külje väärtuse
+echo "sisesta kolmnurga c kylje väärtus: " # pead sisestama c külje väärtuse (reaalarvud sobivad samuti)
+read z #loeb c külje väärtust
+echo "c külje väärtus on $z " # väljastab c külje väärtuse
+q=`echo "scale=2;$x + $y + $z" | bc` #arvutab kolmnurga ümbermõõdu
+p=`echo "scale=2;$q / 2" | bc` # arvutab väärtuse p
+echo "p väärtus on $p" #väljastab väärtuse p
+echo -n "kolmnurga pindala on " # väljastab kolmnurga pidnala (käsk on reavahetusega, et alumine käsk tuleks selle käsu taha
+echo "scale=2;sqrt($p * ( $p - $x ) * ( $p - $y ) * ( $p - $z ))" | bc # arvutab kolmnurga pindala heroni valemi järgi
+#
+# skripti lõpp
+#
