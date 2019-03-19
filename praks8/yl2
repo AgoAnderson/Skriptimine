@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+#  suvaline täisarv
+echo "Siseta suvaline täisarv: " # tuleb sisetada suvaline arv
+read arv # loeb sisetatut
+summa=0 #summa on 0
+while (( $arv != 0 )) # niikaua kui arv ei võrdu 0
+do # tuleb teha
+jaak=$(( $arv%10 )) # jääk on arv jagatud kümnega jääk
+summa=$(( $summa+$jaak )) # summa on summa pluss jää
+arv=$(( $arv/10 )) # arv võrdub arv jagatud kümnega
+done # while command lõpp
+echo "$summa" # väljastab summa
+# skirpti lõpp
