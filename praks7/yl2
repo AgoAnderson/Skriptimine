@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# kuud
+#
+echo -n "Sisesta kuu number: " # peab sisestama kuu numbri
+read x # loeab sisestatud numbrit
+if (( $x == 12 )) || (( $x == 1 )) || (( $x == 2 )); # kui arv on võrdne 1, 2 või 12
+then echo "praegu on talv" # siis väljastatakse üraegu on talv
+elif (( $x == 3 )) || (( $x == 4 )) || (( $x == 5 )); # kui arv on võrdne 3, 4 või 5
+then echo "praegu on kevad" # siis väljastatakse praegu on kevad
+elif (( $x == 6 )) || (( $x == 7 )) || (( $x == 8 )); # kui arv on võrdne 6, 7 või 8
+then echo "praegu on suvi" # siis väljastatakse praegu on suvi
+elif (( $x == 9 )) || (( $x == 10 )) || (( $x == 11 )); # kui arv on võrdne 9, 10 või 11
+then echo "praegu on sügis" # siis väljastatakse praegu on sügis
+else echo "antud kuu numbrit ei ole" # kui numbrid ei jää vahemikku 1-12, siis väljastatakse antud kuu numbrit ei ole
+fi # if commandi lõpp
+#
+# skripti lõpp
+#
